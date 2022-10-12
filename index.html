@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/9515d2d9f8.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/jquery.parallax.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+
+<body style="font-family:Geneva, Verdana, sans-serif">
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light" id="header"></nav>
+
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner home-banner">
+                <div class="carousel-item active" style='background-image: url("../img/Home/HomeBanner01.png");'>
+                </div>
+                <div class="carousel-item" style='background-image: url("../img/Home/HomeBanner02.png");'>
+                </div>
+                <div class="carousel-item" style='background-image: url("../img/Home/HomeBanner03.png");'>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="home-product parallaxmain">
+            <div class="container" data-rate="0.3" data-effect="zoom">
+                <h2 class="text-center py-5">Our <span class="theme-color">Products</span></h2>
+                <div class="row justify-content-center " id="home-product-card">
+                    <div class="card col-sm-3 mx-3 animate__animated">
+                        <div class="card-img">
+                            <img src="./img/Home/HomeIceCream.png" class="card-img-top">
+                            <div class="card-mask">
+                                <div class="card-mask-mid">
+                                    <a href="./product.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="./product.html">IceCream</a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-3 mx-3 animate__animated">
+                        <div class="card-img">
+                            <img src="./img/Home/HomeCake.png" class="card-img-top">
+                            <div class="card-mask">
+                                <div class="card-mask-mid">
+                                    <a href="./product.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="./product.html">Cake</a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-3 mx-3 animate__animated">
+                        <div class="card-img">
+                            <img src="./img/Home/HomeAfterTea.png" class="card-img-top">
+                            <div class="card-mask">
+                                <div class="card-mask-mid">
+                                    <a href="./product.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="./product.html">After Tea</a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid  home-member">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <a href="javascript:void(0)" class="btn" data-bs-toggle="modal" data-bs-target="#LoginModal">Join Us</a>
+            </div>
+        </div>
+        <div class="hmoe-news">
+            <div class="container">
+                <div class="row"></div>
+                <h2 class="text-center py-5">Latest <span class="theme-color">News</span></h1>
+                    <div id="carouselNews" class="carousel carousel-dark slide col-10 m-auto" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <div class="card mb-3">
+                                    <div class="row g-0 w-400" style="height:300px;">
+                                        <div class="col-md-4 home-news-img">
+                                            <img src="./img/News/防疫新生活.jpg" class="img-fluid rounded-start">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural
+                                                    lead-in to additional content. This content is a little bit longer.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                                <div class="home-news-btn"><a href="news.html">詳細內容</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 home-news-img" style="height:300px;">
+                                            <img src="./img/News/抽獎活動.png" class="img-fluid rounded-start">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural
+                                                    lead-in to additional content. This content is a little bit longer.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                                <div class="home-news-btn"><a href="news.html">詳細內容</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 home-news-img" style="height:300px;">
+                                            <img src="./img/News/新會員活動.webp" class="img-fluid rounded-start">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural
+                                                    lead-in to additional content. This content is a little bit longer.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                                <div class="home-news-btn"><a href="news.html">詳細內容</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="back" id="back">
+            <div class="heart"></div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+    <div id="menber-component">
+        <div id="MenberSide" class="menberSide">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenberSide()">&times;</a>
+            <a href="javascript:void(0)" class="" data-bs-toggle="modal" data-bs-target="#LoginModal" id="login">登入</a>
+            <p style="display:none;padding: 8px 8px 8px 32px;font-size: 25px;color: white;" id="welcome"></p>
+            <a href="menber.html">會員資料</a>
+            <a href="javascript:void(0)" onclick="logout()">登出</a>
+        </div>
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">會員登入</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" class="px-5" id="loginform" onsubmit="return login()" method="">
+                            <div>
+                                <label for="account">會員帳號*</label><br>
+                                <input type="text" name="account" id="account" style="width:100% ;" placeholder="請輸入帳號">
+                            </div>
+                            <div class="py-3">
+                                <label for="password">會員密碼*</label><br>
+                                <input type="password" name="password" id="password" style="width:100% ;"
+                                    placeholder="請輸入密碼">
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" class="loginSubmit" id="loginSubmit" value="登入"></input>
+                            </div>
+                            <div class="text-center loginLink">
+                                <a href="javascript:void(0)" class="" data-bs-toggle="modal"
+                                    data-bs-target="#registerModal"><i class="fa-solid fa-users"></i>立即註冊</a>
+                                <a href="javascript:void(0)" class="" data-bs-toggle="modal"
+                                    data-bs-target="#forgetModal"><i class="fa-solid fa-question"></i>忘記密碼</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">會員註冊</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="px-5" id="registerform">
+                            <div>
+                                <label for="registeraccount">帳號*</label><br>
+                                <input type="text" name="registeraccount" id="registeraccount" style="width:100% ;"
+                                    placeholder="請輸入帳號" required>
+                            </div>
+                            <div class="py-2">
+                                <label for="registerpassword">密碼*</label><br>
+                                <input type="password" name="registerpassword" id="registerpassword"
+                                    style="width:100% ;" placeholder="請輸入密碼" required>
+                            </div>
+                            <div class="">
+                                <label for="username">姓名*</label><br>
+                                <input type="text" name="registername" id="username" style="width:100% ;"
+                                    placeholder="請輸入全名" required>
+                            </div>
+                            <div class="py-2">
+                                <label for="phonenum">連絡電話*</label><br>
+                                <input type="text" name="registerphone" id="phonenum" style="width:100% ;"
+                                    placeholder="請輸入電話" required>
+                            </div>
+                            <div>
+                                <span class="p-0">地址</span><br>
+                                <select>
+                                    <option name="county" value="">請選擇縣市</option>
+                                    <option name="county" value="台北市">台北市</option>
+                                    <option name="county" value="台中市">台中市</option>
+                                    <option name="county" value="台南市">台南市</option>
+                                    <option name="county" value="高雄市">高雄市</option>
+                                </select>
+                                <input type="text" name="address" placeholder="請輸入地址"
+                                    style="width: 100%;margin-top: 5px;">
+                            </div>
+                            <div class="text-center registerbtn">
+                                <button type="submit" class=" registerReset" onclick="">重新填寫</button>
+                                <button type="submit" class="registerSend" onclick="register()">確認送出</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">忘記密碼</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="px-5" onsubmit="return forget()">
+                            <div>
+                                <label for="forgetaccount">信箱*</label><br>
+                                <input type="text" name="forgetaccount" id="forgetaccount" style="width:100% ;"
+                                    placeholder="請輸入電子郵件" >
+                            </div>
+                            <div class="text-center forgetbtn">
+                                <button type="submit" class=" forgetlogin" data-bs-toggle="modal"
+                                    data-bs-target="#LoginModal">會員登入</button>
+                                <button type="submit" class="forgrtSend" >送出</button>
+                            </div>
+                            <div class="text-center forgetLink">
+                                <a href="javascript:void(0)" class="" data-bs-toggle="modal"
+                                    data-bs-target="#registerModal"><i class="fa-solid fa-user-plus"></i>立即註冊</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/jquery.parallax.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/login.js"></script>
+
+    <script>
+        $('.parallaxmain').parallax({ mode: 1 });
+        function custom_show(obj, mode) {
+            obj.children().addClass('animation animation_' + mode);
+        };
+
+        $(".card-img").on({
+            "mouseenter": function () {
+                $(this).children(".card-mask").fadeIn(500)
+            },
+            "mouseleave": function () {
+                $(this).children(".card-mask").fadeOut(500)
+            }
+
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
