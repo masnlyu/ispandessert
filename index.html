@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fav.png" >
+    <title>TWice</title>
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/9515d2d9f8.js" crossorigin="anonymous"></script>
@@ -14,7 +16,6 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/jquery.parallax.css">
     <link rel="stylesheet" href="./css/all.css">
-    <title>Document</title>
 </head>
 
 <body style="font-family:Geneva, Verdana, sans-serif">
@@ -24,10 +25,19 @@
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner home-banner">
                 <div class="carousel-item active" style='background-image: url("./img/Home/HomeBanner01.png");'>
+                    <div class="banner-mask">
+                        <p>Giving is a reward in itself.</p>
+                    </div>
                 </div>
                 <div class="carousel-item" style='background-image: url("./img/Home/HomeBanner02.png");'>
+                    <div class="banner-mask">
+                        <p>All things in their being are good for something.</p>
+                    </div>
                 </div>
                 <div class="carousel-item" style='background-image: url("./img/Home/HomeBanner03.png");'>
+                    <div class="banner-mask">
+                        <p>While there is life there is hope.</p>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -186,127 +196,8 @@
         <div class="back" id="back">
             <div class="heart"></div>
         </div>
-    </div>
-    <div class="footer" id="footer"></div>
-    <div id="menber-component">
-        <div id="MenberSide" class="menberSide">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeMenberSide()">&times;</a>
-            <a href="javascript:void(0)" class="" data-bs-toggle="modal" data-bs-target="#LoginModal" id="login">登入</a>
-            <p style="display:none;padding: 8px 8px 8px 32px;font-size: 25px;color: white;" id="welcome"></p>
-            <a href="menber.html">會員資料</a>
-            <a href="javascript:void(0)" onclick="logout()">登出</a>
-        </div>
-        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content ">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">會員登入</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="/" class="px-5" id="loginform" onsubmit="return login()" method="">
-                            <div>
-                                <label for="account">會員帳號*</label><br>
-                                <input type="text" name="account" id="account" style="width:100% ;" placeholder="請輸入帳號">
-                            </div>
-                            <div class="py-3">
-                                <label for="password">會員密碼*</label><br>
-                                <input type="password" name="password" id="password" style="width:100% ;"
-                                    placeholder="請輸入密碼">
-                            </div>
-                            <div class="text-center">
-                                <input type="submit" class="loginSubmit" id="loginSubmit" value="登入"></input>
-                            </div>
-                            <div class="text-center loginLink">
-                                <a href="javascript:void(0)" class="" data-bs-toggle="modal"
-                                    data-bs-target="#registerModal"><i class="fa-solid fa-users"></i>立即註冊</a>
-                                <a href="javascript:void(0)" class="" data-bs-toggle="modal"
-                                    data-bs-target="#forgetModal"><i class="fa-solid fa-question"></i>忘記密碼</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">會員註冊</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" class="px-5" id="registerform">
-                            <div>
-                                <label for="registeraccount">帳號*</label><br>
-                                <input type="text" name="registeraccount" id="registeraccount" style="width:100% ;"
-                                    placeholder="請輸入帳號" required>
-                            </div>
-                            <div class="py-2">
-                                <label for="registerpassword">密碼*</label><br>
-                                <input type="password" name="registerpassword" id="registerpassword"
-                                    style="width:100% ;" placeholder="請輸入密碼" required>
-                            </div>
-                            <div class="">
-                                <label for="username">姓名*</label><br>
-                                <input type="text" name="registername" id="username" style="width:100% ;"
-                                    placeholder="請輸入全名" required>
-                            </div>
-                            <div class="py-2">
-                                <label for="phonenum">連絡電話*</label><br>
-                                <input type="text" name="registerphone" id="phonenum" style="width:100% ;"
-                                    placeholder="請輸入電話" required>
-                            </div>
-                            <div>
-                                <span class="p-0">地址</span><br>
-                                <select>
-                                    <option name="county" value="">請選擇縣市</option>
-                                    <option name="county" value="台北市">台北市</option>
-                                    <option name="county" value="台中市">台中市</option>
-                                    <option name="county" value="台南市">台南市</option>
-                                    <option name="county" value="高雄市">高雄市</option>
-                                </select>
-                                <input type="text" name="address" placeholder="請輸入地址"
-                                    style="width: 100%;margin-top: 5px;">
-                            </div>
-                            <div class="text-center registerbtn">
-                                <button type="submit" class=" registerReset" onclick="">重新填寫</button>
-                                <button type="submit" class="registerSend" onclick="register()">確認送出</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">忘記密碼</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" class="px-5" onsubmit="return forget()">
-                            <div>
-                                <label for="forgetaccount">信箱*</label><br>
-                                <input type="text" name="forgetaccount" id="forgetaccount" style="width:100% ;"
-                                    placeholder="請輸入電子郵件" >
-                            </div>
-                            <div class="text-center forgetbtn">
-                                <button type="submit" class=" forgetlogin" data-bs-toggle="modal"
-                                    data-bs-target="#LoginModal">會員登入</button>
-                                <button type="submit" class="forgrtSend" >送出</button>
-                            </div>
-                            <div class="text-center forgetLink">
-                                <a href="javascript:void(0)" class="" data-bs-toggle="modal"
-                                    data-bs-target="#registerModal"><i class="fa-solid fa-user-plus"></i>立即註冊</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="footer" id="footer"></div>
+        <div id="menber-layout"></div>
     </div>
 
     <!-- Bootstrap -->
